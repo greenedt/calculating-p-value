@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy.stats import norm
 
-
+#assume a p-value of 0.05
 #finding the zscore from a hypothesis on coffee flavor, we will calculate the standard error from a bootstrap distribution
 #data source: https://app.datacamp.com/learn/courses/sampling-in-python
 #hypothesis: the flavor rating for coffee in the population is 7.5
@@ -55,4 +55,4 @@ z_score_coffee_flavor_hypothesis
 # ~ 2.8 z score for 7.5 hypothesis
 
 1-norm.cdf(z_score_coffee_flavor_hypothesis, loc=0, scale=1)
-#pvalue is 0.002 low which is low
+#pvalue is 0.002 which is below our assumed p-value of 0.05 which supports rejection of the null hypothesis
